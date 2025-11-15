@@ -52,112 +52,112 @@
     <script>
         const skillMap = [
             {
-                category: "Consult",
+                category: "Architecture",
                 words: [
-                    {text: "Consult and Strategy", setSize: 60},
-                    {text: "Cloud", setSize: 40},
-                    {text: "Infrastructure", setSize: 40},
-                    {text: "Architecture", setSize: 40},
-                    {text: "Integrations", setSize: 40},
-                    {text: "Costs optimization", setSize: 40},
-                    {text: "Website performance", setSize: 40},
-
-                ],
-            },
-            {
-                category: "Planning",
-                words: [
-                    {text: "Analysis & Audit", setSize: 60},
-                    {text: "Cloud cost audit", setSize: 40},
-                    {text: "Tech specs", setSize: 40},
-                    {text: "Research", setSize: 40},
-                    {text: "PoCs", setSize: 40},
-                    {text: "Estimates", setSize: 40},
-                ],
-            },
-            {
-                category: "Drive",
-                words: [
-                    {text: "Growth & Marketing", setSize: 60},
+                    {text: "Architecture", setSize: 60},
+                    {text: "High-load", setSize: 45},
+                    {text: "System design", setSize: 40},
                     {text: "Scalability", setSize: 40},
-                    {text: "N8N", setSize: 40},
-                    {text: "Tracking", setSize: 40},
-                    {text: "ROI analysis", setSize: 40},
-                    {text: "Leads", setSize: 40},
-                    {text: "Conversions", setSize: 40},
-                    {text: "SEO", setSize: 40},
-                    {text: "Core Web Vitals", setSize: 35},
-                    {text: "Campaigns", setSize: 30},
-                    {text: "CTR", setSize: 30},
-                    {text: "CPC", setSize: 30},
-                    {text: "CPA", setSize: 30},
+                    {text: "Cost optimization", setSize: 40},
+                    {text: "Distributed", setSize: 40},
+                    {text: "Real-time", setSize: 35},
+                    {text: "Reliability", setSize: 35},
+                    {text: "Microservices", setSize: 35},
+
                 ],
             },
             {
                 category: "Cloud",
                 words: [
                     {text: "Cloud", setSize: 60},
-                    {text: "AWS", setSize: 40},
+                    {text: "AWS", setSize: 45},
                     {text: "Cloud GPU", setSize: 40},
-                    {text: "Private LLMs", setSize: 40},
-                    {text: "High-load", setSize: 40},
                     {text: "IaaS", setSize: 40},
                     {text: "CDN", setSize: 40},
-                    {text: "Spot", setSize: 40},
-                    {text: "DNS", setSize: 35},
-                    {text: "RDS", setSize: 35},
-                    {text: "S3", setSize: 35},
-                    {text: "SNS", setSize: 25},
-                    {text: "SQS", setSize: 25},
+                    {text: "DNS", setSize: 40},
+                    {text: "Compute", setSize: 40},
+                    {text: "Observability", setSize: 40},
+                    {text: "Containerization", setSize: 40},
+                    {text: "Serverless", setSize: 35},
+                ],
+            },
+            {
+                category: "Planning",
+                words: [
+                    {text: "Planning", setSize: 60},
+                    {text: "Research", setSize: 40},
+                    {text: "Analysis", setSize: 40},
+                    {text: "Audit", setSize: 40},
+                    {text: "Estimates", setSize: 40},
+                    {text: "Specs", setSize: 35},
+                    {text: "PoC", setSize: 40},
+                ],
+            },
+            {
+                category: "Automation",
+                words: [
+                    {text: "Automation", setSize: 60},
+                    {text: "Pipelines", setSize: 45},
+                    {text: "AI workflows", setSize: 45},
+                    {text: "Orchestration", setSize: 40},
+                    {text: "N8N", setSize: 40},
+                    {text: "CI/CD", setSize: 40},
+                    {text: "ETL", setSize: 40},
+                    {text: "MLOps", setSize: 40},
+                    {text: "Mass scraping", setSize: 35},
+                    {text: "Dev environments", setSize: 35},
+                ],
+            },
+            {
+                category: "Integrations",
+                words: [
+                    {text: "Integrations", setSize: 60},
+                    {text: "AdTech", setSize: 45},
+                    {text: "DSPs", setSize: 45},
+                    {text: "SSPs", setSize: 45},
+                    {text: "Tracking", setSize: 40},
+                    {text: "Ad servers", setSize: 40},
+                    {text: "Payment gateways", setSize: 40},
+                    {text: "APIs", setSize: 35},
+                    {text: "OAuth", setSize: 35},
+                    {text: "LLM tools", setSize: 35},
+                    {text: "Webhooks", setSize: 35},
+                    // {text: "3rd-party ecosystems", setSize: 30},
+                ],
+            },
+            {
+                category: "Engineering",
+                words: [
+                    {text: "Engineering", setSize: 60},
+                    {text: "Docker", setSize: 40},
+                    {text: "Node.js", setSize: 45},
+                    {text: "Python", setSize: 40},
+                    {text: "Bash", setSize: 40},
+                    {text: "React", setSize: 40},
+                    {text: "GitHub Actions", setSize: 35},
+                    {text: "MongoDB", setSize: 40},
+                    {text: "MySQL", setSize: 40},
+                    {text: "Redis", setSize: 35},
+                    {text: "ClickHouse", setSize: 40},
+                    {text: "Nginx", setSize: 35},
+                    {text: "S3", setSize: 30},
+                    {text: "SQS", setSize: 30},
+                    {text: "SNS", setSize: 30},
+                    {text: "REST", setSize: 25},
+                    {text: "JWT", setSize: 25},
+                    {text: "bash", setSize: 25},
                     {text: "SES", setSize: 25},
                     {text: "IAM", setSize: 25},
-                    {text: "WAF", setSize: 25},
-                    {text: "ECR", setSize: 25},
                     {text: "ECS", setSize: 25},
-                ],
-            },
-            {
-                category: "DevOps",
-                words: [
-                    {text: "DevOps", setSize: 60},
-                    {text: "MLOps", setSize: 40},
-                    {text: "CI/CD", setSize: 40},
-                    {text: "Automation", setSize: 40},
-                    {text: "Orchestration", setSize: 35},
-                    {text: "Containerization", setSize: 40},
-                    {text: "Test environments", setSize: 35},
-                    {text: "Web scraping", setSize: 40},
-                    {text: "Shell scripting", setSize: 30},
-                ],
-            },
-            {
-                category: "Dev",
-                words: [
-                    {text: "Hands-on", setSize: 60},
-                    {text: "API", setSize: 40},
-                    {text: "Integrations", setSize: 40},
-                    {text: "Microservices", setSize: 40},
-                    {text: "Node.js", setSize: 40},
-                    {text: "React", setSize: 30},
-                    {text: "MongoDB", setSize: 40},
-                    {text: "ClickHouse", setSize: 40},
-                    {text: "PHP", setSize: 38},
-                    {text: "MySQL", setSize: 38},
-                    {text: "Redis", setSize: 35},
-                    {text: "Nginx", setSize: 35},
-                    {text: "JavaScript", setSize: 35},
-                    {text: "CSS", setSize: 35},
-                ],
-            },
-            {
-                category: "Big Data",
-                words: [
-                    {text: "Big Data", setSize: 60},
-                    {text: "Distributed", setSize: 35},
-                    {text: "Real-time", setSize: 35},
-                    {text: "Performance", setSize: 35},
-                    {text: "Visualization", setSize: 20},
-                    {text: "ClickHouse", setSize: 20}
+                    {text: "ECR", setSize: 25},
+                    {text: "WAF", setSize: 25},
+                    {text: "DKIM", setSize: 25},
+                    {text: "PHP", setSize: 25},
+                    {text: "Ajax", setSize: 20},
+                    {text: "CSS", setSize: 20},
+                    {text: "HTML", setSize: 20},
+                    {text: "XML", setSize: 20},
+                    {text: "- and in 2000s this meant I was a senior", setSize: 20},
                 ],
             },
         ];
@@ -193,25 +193,51 @@
         <div class="section">
 
             <p>
-                As a seasoned IT Consultant, I bring my multifaceted expertise, innovative spirit, and customer-centric
-                approach to every client. A deep understanding of both technology and business makes me not just a
-                consultant, but a reliable partner.
+                I’m a senior technical advisor and hands-on engineer who designs and builds high-load, automated cloud
+                and AI systems that solve real business problems.
             </p>
             <p>
-                Regardless of the challenge at hand or the size of the task - with over 25 years in the
-                field, I’ve seen it all and solved it all.
+                With over 25 years in the field, I bring the kind of practical experience that adapts fast, solves what
+                others avoid, and keeps companies moving when technology becomes the bottleneck.
             </p>
         </div>
     </div>
 </div>
 
-<div class="heading">
+
+
+<div class="heading" name="Background">
+    <div class="format">
+        <h2>Background&nbsp;<span></span></h2>
+    </div>
+</div>
+
+<div class="section" name="Background">
+    <div class="format">
+        <p>
+            Over two decades working in engineering within Israel's fast-paced tech ecosystem, often in
+            roles with direct responsibility for architecture and product direction — from co-founder to technical partner.
+        </p>
+        <p>
+            Much of this work revolved around architecturally complex, performance-sensitive infrastructure and real-time operations.<br/>
+            I've built architectures from scratch, restored unstable ones, and kept companies running through traffic spikes, outages, and sudden growth.
+        </p>
+        <p>
+            Today I work as an independent engineer and advisor in Berlin, combining hands-on engineering with strategic technical oversight.
+        </p>
+
+    </div>
+</div>
+
+
+
+<div class="heading" name="approach">
     <div class="format">
         <h2>Approach&nbsp<span></span></h2>
     </div>
 </div>
 
-<div class="section approach">
+<div class="section approach" name="approach">
     <div class="approachWrapper">
         <div class="approachCube ">
             <div class="cube select-none" id="cube">
@@ -227,8 +253,7 @@
                     <div class="px-5">
                         <b>Transparent</b>
                         <p>
-                            I believe in open communication and keeping clients informed at every stage of the
-                            process.
+                            Clear communication removes risks at every stage of the process.
                         </p>
                     </div>
                 </div>
@@ -236,8 +261,7 @@
                     <div class="px-5">
                         <b>Collaborative</b>
                         <p>
-                            I work closely with my clients, fostering a collaborative relationship that
-                            ensures business goals are met.
+                            Collaboration accelerates execution. A collaborative relationship ensures business goals are met.
                         </p>
                     </div>
                 </div>
@@ -245,8 +269,8 @@
                     <div class="px-5">
                         <b>Detail-oriented</b>
                         <p>
-                            I pay close attention to every detail, from planning to execution - ensuring nothing
-                            is overlooked.
+                            Details define the outcome. A tiny choice can turn into either a strength or a structural
+                            risk later.
                         </p>
                     </div>
                 </div>
@@ -278,13 +302,15 @@
     </div>
 </div>
 
-<div class="heading">
+
+
+<div class="heading" name="skillset">
     <div class="format">
         <h2>Skill set&nbsp;<span></span></h2>
     </div>
 </div>
 
-<div class="section skillmap">
+<div class="section skillmap" name="skillset">
     <div class="format pb-8">
         <p>
             This map covers the landscape of my expertise. This might look overwhelming
@@ -315,8 +341,7 @@
     </div>
 </div>
 
-
-<div class="word-cloud-container animate-floating-4 px-5 py-7">
+<div class="word-cloud-container animate-floating-4 px-5 py-7" name="skillset">
     <div class="word-cloud " id=word-cloud-wrap-0
          data-number="0">
         <svg id="word-cloud-0" overflow="visible"></svg>
@@ -355,13 +380,14 @@
 -->
 
 
-<div class="heading">
+
+<div class="heading" name="portfolio" style="display:none">
     <div class="format">
-        <h2>Projects&nbsp;<span></span></h2>
+        <h22>Projects&nbsp;<span></span></h22>
     </div>
 </div>
 
-<div class="section">
+<div class="section" name="portfolio" style="display:none" >
     <div class="format ">
         <p>
             Explore some notable projects I've been involved in, spanning various industries and technologies, each with its unique story, but all are great success.
@@ -369,8 +395,7 @@
     </div>
 </div>
 
-
-<div class="portfolio">
+<div class="portfolio" name="portfolio" style="display:none" >
     <div class="project" id="project_fi">
         <div class="bg">
             <div class="grad">
@@ -431,7 +456,7 @@
                     <p>
                         As a product manager I curated development and publishing of mobile application and navigation platform.
                         The mobile app features a proprietary in-door navigation solution based on a mesh of
-                        Bluetooth beacons, 3D map of the compound, integration with CRM and outdoor navigation screens.
+                        Bluetooth beacons, 3D map of the compound, integration with CRM, and outdoor navigation screens.
                     </p>
                     <p>
                         <a href="https://play.google.com/store/apps/details?id=com.taexpo" target="_blank">Google Play</a>
@@ -473,7 +498,7 @@
                             Yamileads operates a huge number of performance-based campaigns.
                         </p>
                         <p>
-                            I created for them the tracking platform for perfect, fault-tolerant, extensible and
+                            I created for them the tracking platform for perfect, fault-tolerant, extensible, and
                             uninterrupted marketing operations.
                             The platform utilizes a dozen of integrations (external tracking software, LLMs, automated domains
                             registrations, automated CDN setups) and multiple services, has a cool ACL-based backoffice
@@ -497,7 +522,7 @@
                         <p>
                             As a DevOps engineer I helped to containerize infrastructure, which scaled up operations
                             and allowed the company to focus on business growth. Now Vangates does a lot of scraping powered '
-                            by AI, processes a lot of information using distributed N8N installation
+                            by AI, processes a lot of information using distributed N8N installation,
                             and stores a ton of easily accessible BI data.
                         </p>
                     </div>
@@ -561,13 +586,69 @@
 </div>
 
 
-<div class="heading">
+
+
+<div class="heading" name="what_I_do">
+    <div class="format">
+        <h2>What I Actually Do&nbsp;<span></span></h2>
+    </div>
+</div>
+
+<div class="section" name="what_I_do">
+    <div class="format">
+
+        <p>
+            I work across the full lifecycle of a product: shaping architecture from the first sketches on the whiteboard,
+            building the initial platform, and evolving it into a stable, scalable system as the company grows.
+        </p>
+
+        <ul>
+            <li>Build internal platforms: tracking, automation, BI, cloud-native services</li>
+            <li>Fix unstable architectures and reduce high cloud bills</li>
+            <li>Integrate complex or unusual APIs, legacy systems, and external platforms</li>
+            <li>Build and scale high-load backend systems and real-time pipelines</li>
+            <li>Provide technical decision-making for founders and teams without a CTO</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="heading" name="problems_I_solve">
+    <div class="format">
+        <h2>Problems I Solve&nbsp;<span></span></h2>
+    </div>
+</div>
+
+<div class="section" name="problems_I_solve">
+    <div class="format">
+        <p>
+            I’m often brought in at the zero stage to give a product its first solid technical shape,
+            or later, when a growing system needs senior engineering direction to move past its limits:
+        </p>
+
+        <ul>
+            <li>No clear technical plan for a new product or company</li>
+            <li>Early-stage founders unsure how to turn an idea into a real architecture</li>
+            <li>Cloud costs growing without explanation</li>
+            <li>Systems breaking under load or behaving unpredictably</li>
+            <li>Legacy platforms blocking product or business growth</li>
+            <li>Teams drowning in manual work that should be automated</li>
+            <li>Marketing operations unreliable due to tracking or integration issues</li>
+            <li>No senior engineer to own the decisions that matter</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="heading" name="your_business">
     <div class="format">
         <h2>Your business&nbsp;<span></span></h2>
     </div>
 </div>
 
-<div class="section">
+<div class="section" name="your_business">
     <div class="format">
         <p>
             Your business may be tech-oriented or operate in an industry where technology plays a crucial role.
@@ -575,24 +656,25 @@
             thoughtful direction to drive growth.
         </p>
         <p>
-            My goal is to form strategic alliances with businesses like yours. As your trusted IT partner, I strive to
-            make everything I involve myself in beneficial for both immediate needs and long-term success and
-            sustainability.
+            My goal is to form strategic alliances with businesses like yours. I step in to give clear technical direction,
+            remove uncertainty, and make sure your tech side fuels growth rather than limits it.
         </p>
     </div>
 </div>
 
-<div class="heading">
+
+
+<div class="heading" name="contact">
     <div class="format">
         <h2>Interested?&nbsp;<span></span></h2>
     </div>
 </div>
-<div class="section">
+
+<div class="section" name="contact" >
     <div class="format pt-4">
 
         <p>Let's talk!<br>
-            Special offer: preliminary video call and first few email consultations are free of charge. Just send me
-            your NDA and let’s get started.</p>
+            Just send me your NDA and let’s get started.</p>
 
         <p class="contact-links mt-8">
             <span>Contact me:&nbsp;</span>
@@ -614,6 +696,8 @@
 
     </div>
 </div>
+
+
 <footer class="flex flex-col justify-between h-[20vh]">
     <div>
         <!-- Content that takes up space in the container -->
